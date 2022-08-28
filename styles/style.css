@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --mainTextColor: #fff;
+    --secondaryTextColor: #d4d4d4;
+    --mainLinkColor: #00D7FF;
+    --secondaryLinkColor: #00798f;
+    --mainBackGroundColor: #131415;
+}
+
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5em;
+    color: var(--mainTextColor);
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--mainBackGroundColor);
+}
+
+p,span,li{
+    color: var(--secondaryTextColor);
+}
+
+a{
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-weight: 500;
+}
+
+li{
+    line-height: 1.9em;
+}
+
+#container--main{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section--page{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#wrapper--hero{
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+#wrapper--hero p{
+    margin-bottom: 16px
+}
+
+#bio, a{
+    font-weight: 300;
+}
+
+#profile-pic{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+
+#username{
+    margin-bottom: 24px;
+    font-size: 3rem;
+    margin-left: 8px;
+}
+
+#email{
+    color: var(--mainTextColor);
+}
+
+#email i{
+    margin-right: 8px;
+}
+
+#social--list{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#social--list a{
+    margin-left: 8px;
+}
+
+#social--list i{
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+#social--list a:hover{
+    color: var(--secondaryLinkColor);
+}
+
