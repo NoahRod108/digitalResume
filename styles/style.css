@@ -18,133 +18,103 @@
     font-family: 'Roboto', sans-serif;
 }
 
-#side-nav{
-    position: fixed;
-    width: 350px;
-    height: 100vh;
-    margin: 0 auto;
-    z-index: 1;
-    background-color: var(--secondaryBackGroundColor);
-}
-
-#side-nav h2, p{
-    color: #fff;
-}
-
-.avatar{
-    text-align: center;
-    margin-top: 24px;
-}
-
 li{
-    color: var(--secondaryTextColor);
+    list-style: none;
 }
 
 a{
     text-decoration: none;
-    color: var(--mainLinkColor);
-    font-weight: 500;
 }
 
-li{
-    line-height: 1.9em;
+body{
+    display: flex;
+    background-color: var(--mainBackGroundColor);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 #container--main{
     position: relative;
-    max-width: 350px;
+    width: 100%;
     height: 100vh;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
-.section--page{
-    padding-top: 1em;
-    padding-bottom: 1em;
+.left--side{
+    position: relative;
+    background-color: var(--secondaryBackGroundColor);
+    padding: 40px;
 }
 
-#wrapper--hero{
+.profile--summary{
+    position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 4em;
-}
-
-#wrapper--hero p{
-    margin-bottom: 16px
-}
-
-#bio, a{
-    font-weight: 300;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
 }
 
 #profile-pic{
+    position: relative;
     border-radius: 50%;
     object-fit: cover;
     width: 200px;
     height: 200px;
+    overflow: hidden;
 }
 
-#email{
-    color: var(--mainTextColor);
+.profile--summary h2{
+    color: #fff;
+    font-size: 1.8em;
+    margin-top: 20px;
+    text-align: center;
 }
 
-#email i{
-    margin-right: 8px;
+.profile--title{
+    color: #fff;
+    font-size: .8em;
+    font-weight: 300;
 }
 
-#social--list{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-bottom: 32px;
+.section--title{
+    color: #fff;
+    margin: 20px 0;
 }
 
-#social--list a{
-    margin-left: 8px;
+.contact--info{
+    margin-top: 40px;
 }
 
-#social--list i{
-    font-size: 20px;
-    margin-right: 8px;
+.social--links a, i{
+    color: #fff;
+    padding: 12px;
 }
 
-#social--list a:hover{
-    color: var(--secondaryLinkColor);
+.social--links a:hover{
+    color: var(--mainLinkColor);
 }
 
-#section--container{
-    display: inline-block;
-    width: 600px;
-    margin: 8px auto 0;
-    content: ""
+.social--links ul li{
+    margin: 10px 0;
 }
 
-.indent{
-    margin-left: 32px;
-}
-
-.left--align{
-    float: left;
-}
-
-.right--align{
-    float: right;
-}
-
-.title{
-    color: var(--mainTextColor);
+.social--links ul li i{
     font-size: 18px;
+    color: var(--mainLinkColor)
 }
 
-.subtext{
-    color: var(--secondaryTextColor);
+.right--side{
+    position: relative;
+    background-color: var(--mainBackGroundColor);
+    padding: 40px;
 }
 
 .divider{
     border-bottom: 3px solid var(--mainLinkColor);
     width: 15%;
     margin-bottom: 16px;
-}
-
-.project{
-    margin-bottom: 24px;
 }
