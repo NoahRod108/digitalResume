@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root{
-    --mainTextColor: #fff;
-    --secondaryTextColor: #d4d4d4;
+    --mainTextColor: #000;
+    --secondaryTextColor: #3f3f3f;
     --mainLinkColor: #00D7FF;
     --secondaryLinkColor: #00798f;
-    --mainBackGroundColor: #131415;
+    --mainBackGroundColor: #fff;
+    --secondaryBackGroundColor: #2c2e30;
 }
 
 *{
@@ -17,11 +18,25 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body{
-    background-color: var(--mainBackGroundColor);
+#side-nav{
+    position: fixed;
+    width: 350px;
+    height: 100vh;
+    margin: 0 auto;
+    z-index: 1;
+    background-color: var(--secondaryBackGroundColor);
 }
 
-p,span,li{
+#side-nav h2, p{
+    color: #fff;
+}
+
+.avatar{
+    text-align: center;
+    margin-top: 24px;
+}
+
+li{
     color: var(--secondaryTextColor);
 }
 
@@ -36,7 +51,9 @@ li{
 }
 
 #container--main{
-    max-width: 700px;
+    position: relative;
+    max-width: 350px;
+    height: 100vh;
     margin: 0 auto;
 }
 
@@ -66,12 +83,6 @@ li{
     height: 200px;
 }
 
-#username{
-    margin-bottom: 24px;
-    font-size: 3rem;
-    margin-left: 8px;
-}
-
 #email{
     color: var(--mainTextColor);
 }
@@ -84,6 +95,7 @@ li{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-bottom: 32px;
 }
 
 #social--list a{
@@ -99,3 +111,40 @@ li{
     color: var(--secondaryLinkColor);
 }
 
+#section--container{
+    display: inline-block;
+    width: 600px;
+    margin: 8px auto 0;
+    content: ""
+}
+
+.indent{
+    margin-left: 32px;
+}
+
+.left--align{
+    float: left;
+}
+
+.right--align{
+    float: right;
+}
+
+.title{
+    color: var(--mainTextColor);
+    font-size: 18px;
+}
+
+.subtext{
+    color: var(--secondaryTextColor);
+}
+
+.divider{
+    border-bottom: 3px solid var(--mainLinkColor);
+    width: 15%;
+    margin-bottom: 16px;
+}
+
+.project{
+    margin-bottom: 24px;
+}

@@ -10,13 +10,18 @@
     <title>Digtal Resume</title>
 </head>
 <body>
-    <div id="container--main">
 
-        <section id="wrapper--hero" class="section--page">
+    <nav id="side-nav">
+        <div class="avatar">
             <img id="profile-pic" src="./assets/images/me.jpg" alt="self_image">
+            <h2 id="username">Noah <br />Rodriguez</h2>
+        </div>
+    </nav>
+
+    <div id="container--main">
+        <section id="wrapper--hero" class="section--page">
 
             <div>
-                <h1 id="username">Noah Rodriguez</h1>
                 <p id="bio">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Non perferendis, quasi aspernatur pariatur eveniet incidunt. Architecto eum nemo laborum cum.
                 </p>
@@ -34,14 +39,39 @@
         </section>
 
         <section class="section--page">
-            <h2>Skills & Qualifications</h2>
-            <ul id="qualificaiton--list">
-                <li>skills</li>
-                <li>skills</li>
-                <li>skills</li>
-                <li>skills</li>
-            </ul>
+            <h2>Experience</h2>
+            <div class="divider"></div>
+            <div id="section--container">
+                <div class="left--align indent">
+                    <p class="title">Solutions Engineer</p>
+                    <p class="subtext">Valparaiso, IN, United States</p>
+                </div>
+                <div class="right--align">
+                    <p class="right--align">
+                        2020 - current
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section--page">
+            <h2>Projects & Activities</h2>
+            <div class="divider"></div>
+            <div id="section--container">
+                <div class="project">
+                    <p class="subtext indent"><span class="title">Student Roster</span> - lead</p>
+                    <p class="subtext indent">I was given lead to create a roster for staff members who manage student workers. created the application with React and the MUI library. On the back-end, I created a few internal API’s to retrieve student data using PHP and used MySQL as our database. To authorize staff members, we used Google SAML on login to verify their current role.</p>
+                </div>
+                <div class="project">
+                    <p class="subtext indent"><span class="title">Leave System</span> - Maintained / Developed</p>
+                    <p class="subtext indent">I have maintained, fixed bugs, and added new features to our leave request system for staff and faculty. I have worked on the application from mid-way of development to production. The application was built in a LAMP stack with Google SAML as our user authorization.</p>
+                </div>
+                <div class="project">
+                    <p class="subtext indent"><span class="title">League of Legends Manager </span> - Personal Project</p>
+                    <p class="subtext indent">This is a personal project that I am currently working using the League of Legends API. I wanted to create a personal dashboard where you can manage your champion pool and items. There will be a display for your champions giving relevant in game statistics. The project is being created in a MERN stack. This is a slow progress project.</p>
+                </div>
+            </div>
         </section>
     </div>
-</body>git add 
+</body>
 </html>
