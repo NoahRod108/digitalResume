@@ -10,21 +10,17 @@
     <title>Digtal Resume</title>
 </head>
 <body>
-    <!-- <div class="avatar">
-        <img id="profile-pic" src="./assets/images/me.jpg" alt="self_image">
-        <h2 id="username">Noah <br />Rodriguez</h2>
-    </div> -->
-    <nav id="container--main">
+    <div class="container--main">
        <div class="left--side">
             <section class="profile--summary">
                 <div class="avatar">
-                    <img id="profile-pic" src="./assets/images/me.jpg" alt="self_image">
-                    <h2>Noah Rodriguez<br /><span class="profile--title">Web Developer</span></h2>
+                    <img class="profile-pic" src="./assets/images/me.jpg" alt="self_image">
+                    <h2>Noah Rodriguez<br /><span class="sub--title">Web Developer</span></h2>
                 </div>
             </section>
 
-            <section class="contact--info">
-                <h3 class="section--title">Contact Info</h3>
+            <section class="contact--info section--content">
+                <h3 class="section--title--left">Contact Info</h3>
                 <div class="social--links">
                     <ul>
                         <li><a href="" target="_blank"><i class="fa fa-brands fa-phone"></i>+1 219 669 1791</a></li>
@@ -35,66 +31,101 @@
                 </div>
             </section>
 
-            <section class="education">
-                <h3 class="section--title">Education</h3>
+            <section class="education section--content">
+                <h3 class="section--title--left">Education</h3>
+                <ul>
+                    <li>
+                        <p>2015 - 2020</p>
+                        <h4>Bachelor of Science in Computer Information Technology</h4>
+                        <h4>Purdue University Northwest, Westville, IN</h4>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="downloads">
+                <div class="buttons">
+                    <div class="button">
+                        <a class="primary-btn" href="" target="_blank"><i class="fa fa-solid fa-download"></i>Download Resume</a>
+                    </div>
+                </div>
             </section>
        </div>
-       <div class="right--side"></div>
-    </nav>
-
-    <!-- <div id="container--main">
-        <section id="wrapper--hero" class="section--page">
-
-            <div>
-                <p id="bio">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non perferendis, quasi aspernatur pariatur eveniet incidunt. Architecto eum nemo laborum cum.
-                </p>
-                <p id="email"><i class="fa fa-solid fa-envelope"></i>noaherod18@gmail.com</p>
-            </div>
+       <div class="right--side">
+        <section class="about section--content">
+            <h2 class="section--title--right">Objective</h2>
+            <p>I am a programmer looking for a team to expand my knowledge and build upon my skills as a developer. I have the ability to learn new technologies as needed and collaborate in teams. I have been working in a LAMP stack on the front end and back end of out in-house web applications. Always eager to tackle new challenges and the technologies that come with them. I am currently learning React and sharpening my front-end design skills.</p>
         </section>
 
-        <section class="section--page">
-            <div id="social--list">
-                <a href="" target="_blank"><i class="fa fa-brands fa-github"></i>Github</a>
-                <a href="" target="_blank"><i class="fa fa-brands fa-linkedin"></i>Linkedin</a>
-                <a class="primary-btn" href="" target="_blank"><i class="fa fa-solid fa-download"></i>Download Resume</a>
-            </div>
-        </section>
-
-        <section class="section--page">
-            <h2>Experience</h2>
-            <div class="divider"></div>
-            <div id="section--container">
-                <div class="left--align indent">
-                    <p class="title">Solutions Engineer</p>
-                    <p class="subtext">Valparaiso, IN, United States</p>
+        <section class="experience section--content">
+            <h2 class="section--title--right">Experience</h2>
+            <div class="experience--container">
+                <div class="company--year">
+                    <h4>2020 - current</h4>
+                    <h4>University</h4>
                 </div>
-                <div class="right--align">
-                    <p class="right--align">
-                        2020 - current
-                    </p>
+                <div class="company--text">
+                    <h3>Solutions Engineer</h3>
+                    <ul>
+                        <li>Create and maintain in-house web / mobile applications for students and staff.</li>
+                        <li>Created documentation to help IT groups create their own email templates to be used for various departments</li>
+                        <li>Collaborated with staff members to fix bugs and add new features to their applications.</li>
+                        <li>Updated legacy code to modern scalable code.</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section class="section--page">
-            <h2>Projects & Activities</h2>
-            <div class="divider"></div>
-            <div id="section--container">
-                <div class="project">
-                    <p class="subtext indent"><span class="title">Student Roster</span> - lead</p>
-                    <p class="subtext indent">I was given lead to create a roster for staff members who manage student workers. created the application with React and the MUI library. On the back-end, I created a few internal API’s to retrieve student data using PHP and used MySQL as our database. To authorize staff members, we used Google SAML on login to verify their current role.</p>
+        <section class="tech--stack section--content">
+            <h2 class="section--title--right">Skills</h2>
+            <div class="tech--items">
+                <div class="tech--cards">
+                    <span>HTML, JavaScript, CSS</span>
                 </div>
-                <div class="project">
-                    <p class="subtext indent"><span class="title">Leave System</span> - Maintained / Developed</p>
-                    <p class="subtext indent">I have maintained, fixed bugs, and added new features to our leave request system for staff and faculty. I have worked on the application from mid-way of development to production. The application was built in a LAMP stack with Google SAML as our user authorization.</p>
+                <div class="tech--cards">
+                    <span>PHP, MySQL</span>
                 </div>
-                <div class="project">
-                    <p class="subtext indent"><span class="title">League of Legends Manager </span> - Personal Project</p>
-                    <p class="subtext indent">This is a personal project that I am currently working using the League of Legends API. I wanted to create a personal dashboard where you can manage your champion pool and items. There will be a display for your champions giving relevant in game statistics. The project is being created in a MERN stack. This is a slow progress project.</p>
+                <div class="tech--cards">
+                    <span>Linux Commands</span>
+                </div>
+                <div class="tech--cards">
+                    <span>SVN, Git</span>
                 </div>
             </div>
-        </section> -->
+            <h3 class="section--title--right">Experience With:</h3>
+            <div class="tech--items">
+                <div class="tech--cards">
+                    <span>Python, Express, NodeJS, Java</span>
+                </div>
+                <div class="tech--cards">
+                    <span> React, Laravel</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects section--content">
+            <h2 class="section--title--right">Projects & Activities</h2>
+            <div class="projects--container">
+                <div class="linebreak"></div>
+                <div class="project--items">
+                    <h3>Student Roster - <span class="project--title">Lead</span></h3>
+                    <p>I was given lead to create a roster for staff members who manage student workers. created the application with React and the MUI library. On the back-end, I created a few internal API’s to retrieve student data using PHP and used MySQL as our database. To authorize staff members, we used Google SAML on login to verify their current role.</p>
+                </div>
+                <div class="linebreak"></div>
+
+                <div class="project--items">
+                    <h3>Leave System - <span class="project--title">Maintained / developed</span></h3>
+                    <p>I have maintained, fixed bugs, and added new features to our leave request system for staff and faculty. I have worked on the application from mid-way of development to production. The application was built in a LAMP stack with Google SAML as our user authorization.</p>
+                </div>
+                <div class="linebreak"></div>
+
+                <div class="project--items">
+                    <h3>League of Legends Manager - <span class="project--title">Personal project</span></h3>
+                    <p>This is a personal project that I am currently working using the League of Legends API. I wanted to create a personal dashboard where you can manage your champion pool and items. There will be a display for your champions giving relevant in game statistics. The project is being created in a MERN stack. This is a slow progress project.</p>
+                </div>
+                <div class="linebreak"></div>
+            </div>
+        </section>
+       </div>
     </div>
 </body>
 </html>
