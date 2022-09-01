@@ -65,6 +65,7 @@ body{
     width: 200px;
     height: 200px;
     overflow: hidden;
+    border: 2px solid #fff;
 }
 
 .profile--summary h2{
@@ -102,17 +103,15 @@ body{
     margin-top: 40px;
 }
 
-.social--links a, i{
+.social--links li, a, i{
     color: #fff;
-    padding: 12px;
 }
 
+.social--links i{
+    padding: 16px;
+}
 .social--links a:hover{
     color: var(--mainLinkColor);
-}
-
-.social--links ul li{
-    margin: 10px 0;
 }
 
 .social--links ul li i{
@@ -140,27 +139,22 @@ body{
 
 .downloads{
     margin: 0 auto;
-    width: 300px;
-}
-
-.buttons{
-    position: absolute;
-    bottom: 0;
-    width: 300px;
-    font-weight: 600;
-    margin-bottom: 24px;
+    width: max-content;
 }
 
 .button{
+    display: block;
+    width: 100%;
     background-color: var(--mainLinkColor);
     border-radius: 6px;
-    padding: 8px;
+    padding: 12px;
     text-align: center;
     cursor: pointer;
 }
 
-.button i{
+.button i, .button a{
     color: #000;
+    padding-right: 8px;
 }
 
 .button:hover{
@@ -276,5 +270,73 @@ body{
     .experience--container{
         display: inline-block;
         border: none;
+    }
+}
+
+@media screen and (max-width: 290px){
+    h2, h3{
+      text-align: center;  
+    }
+
+    .tech--items{
+        display: inline-block;
+    }
+
+    .tech--cards{
+        margin: 16px;
+    }
+
+    .project--items h3{
+        text-align: left;
+    }
+
+    .social--links ul i{
+        display: none;
+    }
+
+    .social--links ul li{
+        text-align: center;
+        padding: 12px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .social--links a{
+        color: var(--mainLinkColor);
+    }
+
+    .downloads{
+        width: max-content;
+        max-width: 100%;
+    }
+
+    .button i{
+        display: none;
+    }
+    
+    .button{
+        display: block;
+        background-color: var(--mainLinkColor);
+        border-radius: 6px;
+        padding: 12px;
+        text-align: center;
+        cursor: pointer;
+
+    }
+
+    .buttons{
+        position: relative;
+        bottom: 0;
+        width: 300px;
+        font-weight: 600;
+        width: max-content;
+        max-width: 100%;
+    }
+
+    .project--items{
+        border: none;
+    }
+
+    .project--items p{
+        margin-top: 12px;
     }
 }
