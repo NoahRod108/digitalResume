@@ -40,7 +40,7 @@ body{
     height: 100vh;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: .7fr 2fr;
 }
 
 .left--side{
@@ -212,8 +212,13 @@ body{
 
 .project--items{
     border-left: 1px solid var(--secondaryTextColor);
-    padding: 8px;
+    padding-left: 12px;
     margin: 32px 0;
+}
+
+.project--items li{
+    list-style: disc;
+    padding-left: 12px;
 }
 
 .linebreak{
