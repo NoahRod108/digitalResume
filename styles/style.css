@@ -164,7 +164,9 @@ body{
 .right--side{
     position: relative;
     background-color: var(--mainBackGroundColor);
-    padding: 40px;
+    padding: 40px 0;
+    margin: 0 auto;
+    max-width: 70%;
 }
 
 .right--side p, li{
@@ -184,8 +186,11 @@ body{
 }
 
 .experience--container li{
-    list-style: circle;
-    padding: 6px;
+    list-style: disc;
+}
+
+.company--text ul{
+    padding-left: 24px;
 }
 
 .company--year{
@@ -212,6 +217,7 @@ body{
 
 .project--items{
     border-left: 1px solid var(--secondaryTextColor);
+    border-right: 1px solid var(--secondaryTextColor);
     padding-left: 12px;
     margin: 32px 0;
 }
@@ -268,8 +274,8 @@ body{
         display: table;
     }
 
-    .left--side h3{
-        text-align: center;
+    .project--items li{
+        padding-right: 12px;
     }
 
     .experience--container{
@@ -288,6 +294,7 @@ body{
     }
 
     .tech--cards{
+        text-align: center;
         margin: 16px;
     }
 
